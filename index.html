@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login & Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- Login Section -->
+<div id="login" class="container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="message"></p>
+</div>
+
+<!-- Dashboard Section -->
+<div id="dashboard" class="container dashboard">
+    <h3>Welcome To your gallery</h3>
+    <p>You succesfully log in.</p>
+
+    <!-- Image Collection -->
+  <div class="box">
+    <div class="gallery">
+        <div class="image-item">
+            <img src="gen.png" alt="Gen">
+            <p>Gennyy</p>
+        </div>
+        <div class="media-item">
+            <video width="250" controls>
+                <source src="genleak.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Leak ni gen??</p>
+        </div>
+
+        <div class="image-item">
+            <img src="selwyn.png" alt="Selwyn">
+            <p>Selwynyy</p>
+        </div>
+        <div class="image-item">
+            <img src="gab.png" alt="Gab">
+            <p>Gabinayut</p>
+        <div class="image-item">
+            <img src="dic.png" alt="dic">
+        <p>benidiki</p> </div>
+        </div>
+    </div>
+</div>
+
+    <button onclick="logout()">Logout</button>
+</div>
+</div>
+<script src="script.js"></script>
+
+
+</body>
+</html>
