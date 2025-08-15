@@ -13,10 +13,21 @@ function login() {
     }
 }
 
+
+function openSettings() {
+    document.getElementById("settingsWindow").style.display = "block";
+}
+
+function closeSettings() {
+    document.getElementById("settingsWindow").style.display = "none";
+}
+
 function logout() {
+    alert("Logging out...");
     document.getElementById("dashboard").style.display = "none";
     document.getElementById("login").style.display = "block";
     document.getElementById("username").value = "";
     document.getElementById("password").value = "";
     document.getElementById("message").textContent = "";
+    // Add your logout code here
 }
